@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:visibility="visible"
+    tools:context=".Activity_Login">
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="19dp"
+        android:background="#fff"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:padding="8dp"
+        android:background="#fff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/text1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_alignStart="@+id/text2"
+        android:layout_alignEnd="@+id/text2"
+        android:layout_marginTop="18dp"
+        android:text="LOGIN"
+        android:textColor="#F8FAF9" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="35dp"
+        android:text="Anda Belum Punya Akun?"
+        android:textColor="#F8FAF9"/>
+    <TextView
+        android:id="@+id/selamatdatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:textSize="40sp"
+        android:text="Selamat Datang"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/Daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text3"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/text3"
+        android:text="Daftar Sekarang"
+        android:textColor="#FFF"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Daftar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"/>
+
+</RelativeLayout>

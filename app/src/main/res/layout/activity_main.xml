@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="Menu Aplikasi"
+        android:textColor="#fff"
+        android:textSize="25sp"/>
+    
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/menu"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu"
+        android:layout_marginTop="200dp"
+        android:text="PROFILE"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="19dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>
